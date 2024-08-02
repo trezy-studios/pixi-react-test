@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@pixi/react": "8.0.0-beta.6",
+    "@pixi/react": "8.0.0-beta.7",
     "@react-three/fiber": "^8.16.8",
     "next": "14.2.4",
     "pixi.js": "^8.2.2",

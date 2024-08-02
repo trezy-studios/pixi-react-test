@@ -9,8 +9,8 @@ import {
 
 
 // Local imports
-import { keyBindings } from '@/helpers/keyBindings.js'
-import { store } from '@/store.js'
+import { keyBindings } from '@/helpers/keyBindings.ts'
+import { store } from '@/store.ts'
 
 
 
@@ -18,7 +18,7 @@ import { store } from '@/store.js'
 
 export function useKeyboardStateSystem() {
   /** @param {KeyboardEvent} event */
-  const handleKeyDown = useCallback(event => {
+  const handleKeyDown = useCallback<(event: KeyboardEvent) => void>(event => {
 		if (!keyBindings[event.key]) {
 			return
     }
@@ -49,7 +49,7 @@ export function useKeyboardStateSystem() {
   }, [])
 
   /** @param {KeyboardEvent} event */
-  const handleKeyUp = useCallback(event => {
+  const handleKeyUp = useCallback<(event: KeyboardEvent) => void>(event => {
 		if (!keyBindings[event.key]) {
 			return
     }

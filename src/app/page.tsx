@@ -25,8 +25,8 @@ import {
 
 
 // Local imports
-import { Game } from '@/components/Game.jsx'
-import { store } from '@/store.js'
+import { Game } from '@/components/Game.tsx'
+import { store } from '@/store.ts'
 
 
 
@@ -52,6 +52,7 @@ export default function Home() {
 
 	useLayoutEffect(() => {
 		if (typeof window !== 'undefined') {
+			// @ts-ignore
 			window.store = store
 		}
 	}, [])

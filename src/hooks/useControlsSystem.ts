@@ -7,9 +7,9 @@ import { useTick } from '@pixi/react'
 
 
 // Local imports
-import { ACTION_HANDLERS } from '@/constants/ACTION_HANDLERS.js'
-import { keyBindings } from '@/helpers/keyBindings.js'
-import { store } from '@/store.js'
+import { ACTION_HANDLERS } from '@/constants/ACTION_HANDLERS.ts'
+import { keyBindings } from '@/helpers/keyBindings.ts'
+import { store } from '@/store.ts'
 
 
 
@@ -26,12 +26,12 @@ export function useControlsSystem() {
 
 		for (const key of boundKeys) {
 			if (keyboardState.has(key)) {
-				const keyState = keyboardState.get(key)
+				const keyState = keyboardState.get(key)!
         const actionName = keyBindings[key]
         const action = ACTION_HANDLERS[actionName]
 
         if (keyState.isActive) {
-					if ((keyState.sinceLastActivated === null) || (action.isRepeatable && keyState.sinceLastActivated < action.repeatFrequency)) {
+					if ((keyState.sinceLastActivated === null) || (action.isRepeatable && keyState.sinceLastActivated < action.repeatFrequency!)) {
 						keyState.sinceLastActivated = now
           	action?.onActivate?.()
 					}

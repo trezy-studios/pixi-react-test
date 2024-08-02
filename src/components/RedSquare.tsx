@@ -1,4 +1,5 @@
 // Module imports
+import type { Graphics } from 'pixi.js'
 import {
 	useCallback,
 	useEffect,
@@ -22,8 +23,7 @@ export function RedSquare() {
 		y: 0,
 	})
 
-	const draw = useCallback(
-		/** @param {import('pixi.js').Graphics} graphics */
+	const draw = useCallback<(graphics: Graphics) => void>(
 		graphics => {
 			graphics.clear()
 			graphics.setFillStyle({ color: 'red' })

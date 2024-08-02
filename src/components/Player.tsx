@@ -11,7 +11,7 @@ import { useStore } from 'statery'
 
 
 // Local imports
-import { store } from '@/store.js'
+import { store } from '@/store.ts'
 
 
 

@@ -1,12 +1,19 @@
 // Local imports
-import { ACTION_NAMES } from '@/constants/ACTION_NAMES.js'
-import { store } from '@/store.js'
+import { ACTION_NAMES } from '@/constants/ACTION_NAMES.ts'
+import { store } from '@/store.ts'
 
 
 
 
 
-export const ACTION_HANDLERS = {
+export const ACTION_HANDLERS: {
+  [key: string]: {
+    isRepeatable: boolean,
+    onActivate: (...args: any) => any
+    onDeactivate?: (...args: any) => any
+    repeatFrequency?: number,
+  }
+} = {
   [ACTION_NAMES.MOVE_EAST]: {
     isRepeatable: false,
     onActivate() {

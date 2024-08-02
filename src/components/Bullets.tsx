@@ -7,8 +7,8 @@ import { useStore } from 'statery'
 
 
 // Local imports
-import { Bullet } from '@/components/Bullet.jsx'
-import { store } from '@/store.js'
+import { Bullet } from '@/components/Bullet.tsx'
+import { store } from '@/store.ts'
 
 
 

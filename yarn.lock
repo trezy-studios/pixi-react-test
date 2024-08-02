@@ -155,10 +155,10 @@
   resolved "https://registry.npmjs.org/@pixi/colord/-/colord-2.9.6.tgz"
   integrity sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==
 
-"@pixi/react@8.0.0-beta.6":
-  version "8.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@pixi/react/-/react-8.0.0-beta.6.tgz#8dfcdefd7f7b1100fc42d72aec6057965c6b054a"
-  integrity sha512-rWAluQgWlzu4bzLJbkSB3zSrGF0vkQq/F5uXcTQwVTDMtsNLZLCzyD72MuKARo9DTge2C7HGz7hSjbWGu2qMEA==
+"@pixi/react@8.0.0-beta.7":
+  version "8.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@pixi/react/-/react-8.0.0-beta.7.tgz#10d160ae7a4081e12dee1327d4dce1a2ce90b7c8"
+  integrity sha512-VtTZb2/s8U28omanlequATYoe8ItyW4aibWrPQu2fYXUbm2z8OL+J9QpBJuzHqxBORZ9AB/GNE5WxwW7Fhqf7Q==
   dependencies:
     react-reconciler "0.29.2"
 

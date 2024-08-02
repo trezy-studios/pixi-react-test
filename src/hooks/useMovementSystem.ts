@@ -6,7 +6,7 @@ import { useTick } from '@pixi/react'
 
 
 // Local imports
-import { store } from '@/store.js'
+import { store } from '@/store.ts'
 
 
 
